@@ -48,7 +48,7 @@ jobs:
           context: .
           push: true
           tags: |
-            your-dockerhub-username/your-repo-name:latest
+            rhossain16/you-app-api:latest
 
       - name: Deploy to Docker Compose
         run: |
