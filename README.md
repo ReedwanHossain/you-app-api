@@ -22,52 +22,33 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# You App API
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## With Docker
 
-## Installation
+### Prerequisites
 
-```bash
-$ npm install
-```
+- Docker
+- Docker Compose
 
-## Running the app
+### Running the Application
 
-```bash
-# development
-$ npm run start
+1. Clone the repository:
 
-# watch mode
-$ npm run start:dev
+   ```bash
+   git clone https://github.com/your-username/you-app-api.git
+   cd you-app-api
 
-# production mode
-$ npm run start:prod
-```
+   ```
 
-## Test
+2. Create a .env file based on .env.example:
 
-```bash
-# unit tests
-$ npm run test
+   ```bash
+   cp .env.example .env
 
-# e2e tests
-$ npm run test:e2e
+   ```
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+3. Run
+   ```bash
+   docker compose up -d --build
+   ```
