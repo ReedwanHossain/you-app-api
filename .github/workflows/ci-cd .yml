@@ -57,3 +57,6 @@ jobs:
           MONGO_URI: ${{ secrets.MONGO_URI }}
           RABBITMQ_URI: ${{ secrets.RABBITMQ_URI }}
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
+
+      - name: Deploy
+        run: echo "Todo "
